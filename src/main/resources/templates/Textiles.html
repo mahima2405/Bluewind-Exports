@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="/style.css">
+</head>
+<body>
+<div id="navbar"></div>
+<script>
+    fetch('/frontHeader.html')
+        .then(res => res.text())
+        .then(data => document.getElementById('navbar').innerHTML = data);
+</script>
+<br>
+<br>
+
+
+
+<!-- ===== TEXTILES & GARMENTS ===== -->
+<section class="product-section light-bg">
+    <div class="container">
+
+        <h2 class="section-title">Textiles & Garments</h2>
+
+        <div class="product-grid">
+
+            <!-- CARD 1 -->
+            <div class="product-card">
+                <img src="/cotton.jpg" alt="Cotton Fabrics">
+                <h4>Cotton Fabrics</h4>
+                <p>High-quality cotton fabrics for apparel and home use</p>
+            </div>
+
+            <!-- CARD 2 -->
+            <div class="product-card">
+                <img src="/synthetic.jpg" alt="Synthetic Fabrics">
+                <h4>Synthetic & Blended Fabrics</h4>
+                <p>Durable polyester, viscose & blended materials</p>
+            </div>
+
+            <!-- CARD 3 -->
+            <div class="product-card">
+                <img src="/home-textile.jpg" alt="Home Textiles">
+                <h4>Home Textiles</h4>
+                <p>Bedsheets, Towels, Curtains & Furnishing Fabrics</p>
+            </div>
+
+            <!-- CARD 4 -->
+            <div class="product-card">
+                <img src="/garments.jpg" alt="Readymade Garments">
+                <h4>Readymade Garments</h4>
+                <p>Men’s, Women’s & Kids Wear for Global Markets</p>
+            </div>
+
+            <!-- CARD 5 -->
+            <div class="product-card">
+                <img src="/yarn.jpg" alt="Yarn">
+                <h4>Yarn</h4>
+                <p>Cotton & Synthetic Yarn for Textile Manufacturing</p>
+            </div>
+
+            <!-- CARD 6 -->
+            <div class="product-card">
+                <img src="/raw-material.jpg" alt="Textile Raw Materials">
+                <h4>Textile Raw Materials</h4>
+                <p>Fibers & Inputs for Garment & Fabric Production</p>
+            </div>
+
+        </div>
+    </div>
+</section>
+
+
+
+
+<iframe
+        src="/frontFooter.html"
+        style="width:100%; height:380px; border:none; display:block;">
+</iframe>
+</body>
+</html>

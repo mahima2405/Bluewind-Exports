@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.w3.org/1999/xhtml">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>BLUEWIND EXPORTS</title>
+
+
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css">
+
+</head>
+
+<body>
+
+<div id="navbar"></div>
+<script>
+  fetch('/frontHeader.html')
+      .then(res => res.text())
+      .then(data => document.getElementById('navbar').innerHTML = data);
+</script>
+
+
+<section class="hero">
+  <img src="/Images/ship2.jpg" alt="Global Trade" class="hero-img">
+
+  <div class="hero-overlay"></div>
+
+  <div class="hero-text">
+    <h1>Bluewind – Powering Global Trade with Trust and Quality</h1>
+    <p>Your reliable partner for imports, exports, and customized trade solutions</p>
+
+    <div class="hero-buttons">
+      <a href="/exports" class="btn btn-primary">Exports</a>
+      <a href="/imports" class="btn btn-outline-light">Imports</a>
+    </div>
+  </div>
+</section>
+
+<!-- About Section -->
+<section class="about-section">
+  <div class="about-container">
+
+    <!-- LEFT IMAGE -->
+    <div class="about-image">
+      <img src="/Images/about-container.jpg" alt="Bluewind Exports Containers">
+    </div>
+
+    <!-- RIGHT CONTENT -->
+    <div class="about-content">
+      <h2>About Bluewind Exports</h2>
+
+      <p>
+        Bluewind Exports is a professionally managed Import & Export company based in India, engaged in the global trade of a diverse range of products including agricultural and food commodities, textiles and garments, auto components, engineering goods, and miscellaneous manufactured articles. The company was established with a clear vision to promote high-quality Indian products in international markets while maintaining the highest standards of professionalism, transparency, and ethical business practices.
+      </p>
+
+      <p>
+        India is globally recognized for its strong agricultural base, skilled manufacturing sector, and rich diversity of products. Bluewind Exports was founded to bridge the gap between Indian producers and global buyers, ensuring that products manufactured and sourced in India reach international markets efficiently, safely, and in full compliance with global trade standards.
+      </p>
+
+     <!-- <p>
+        With a deep understanding of international trade dynamics, Bluewind Exports operates as a reliable sourcing and supply partner for importers, wholesalers, distributors, retailers, and bulk buyers across the world. Our business model is built on long-term relationships, consistent quality, competitive pricing, and dependable delivery schedules.
+      </p>
+-->
+      <div class="about-buttons">
+        <a href="/exports" class="btn-outline">Exports</a>
+        <a href="/imports" class="btn-outline">Imports</a>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+
+<section class="mission-section">
+  <div class="mission-wrapper">
+
+    <!-- TEXT -->
+    <div class="mission-content">
+      <h2>Our Mission</h2>
+
+      <p>
+        At <strong>Bluewind Exports</strong>, our mission is to connect Indian manufacturers,
+        farmers, and producers with global markets by delivering high-quality, value-driven
+        products that meet international standards while maintaining the highest levels of
+        ethical business practices and transparency.
+      </p>
+
+      <p>
+        We aim to bridge India’s strong production capabilities with global demand, ensuring
+        safe, efficient, and competitive delivery of products worldwide.
+      </p>
+
+      <p>
+        We are committed to adding value at every stage of the export process through strict
+        quality control, regulatory compliance, reliable logistics, and timely delivery.
+        By focusing on customer-centric solutions, sustainable sourcing, and long-term
+        partnerships, Bluewind Exports creates lasting value across international markets.
+      </p>
+      <div class="mission-button">
+        <a href="/contact" class="contact-btn">Contact Us</a>
+      </div>
+    </div>
+
+
+    <!-- IMAGE -->
+    <div class="mission-image">
+      <img src="/images/mission2.jpg" alt="Bluewind Exports Mission">
+    </div>
+
+  </div>
+</section>
+<section class="vision-section">
+  <h2 class="vision-title">Our Vision</h2>
+
+  <p class="vision-text">
+    To become a globally trusted import and export partner by consistently delivering
+    high-quality products, fostering long-term international relationships, and
+    promoting ethical, transparent, and sustainable trade practices across global markets.
+  </p>
+</section>
+
+
+<iframe
+        src="/frontFooter.html"
+        style="width:100%; height:380px; border:none; display:block;">
+</iframe>
+
+</body>
+</html>

@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="/style.css">
+
+</head>
+<body>
+<div id="navbar"></div>
+<script>
+    fetch('/frontHeader.html')
+        .then(res => res.text())
+        .then(data => document.getElementById('navbar').innerHTML = data);
+</script>
+<br>
+<br>
+<!-- ===== IMPORTS HERO SECTION ===== -->
+<section class="imports-hero">
+    <div class="container text-center">
+        <h1>Our Imports</h1>
+        <p>
+            Bluewind Exports sources premium-quality products from trusted global suppliers,
+            ensuring reliability, quality assurance, and timely delivery to Indian markets.
+        </p>
+    </div>
+</section>
+
+<!-- ===== IMPORT PRODUCTS SECTION ===== -->
+<section class="import-products">
+    <div class="container">
+
+        <div class="row text-center">
+
+            <!-- TEXTILES -->
+            <div class="col-md-4 mb-4">
+                <div class="import-card">
+                    <h3>Textiles</h3>
+                    <p>
+                        We import high-quality fabrics, finished textiles, and raw materials
+                        used in fashion, home furnishing, and industrial applications.
+                    </p>
+                    <a href="/textiles" class="import-btn">View Textiles</a>
+                </div>
+            </div>
+
+            <!-- AGRICULTURAL EQUIPMENT -->
+            <div class="col-md-4 mb-4">
+                <div class="import-card">
+                    <h3>Agricultural Equipment</h3>
+                    <p>
+                        Advanced agricultural machinery and tools designed to improve
+                        productivity, efficiency, and sustainability in farming operations.
+                    </p>
+                    <a href="/agriculture" class="import-btn">View Equipment</a>
+                </div>
+            </div>
+
+            <!-- FURNITURE -->
+            <div class="col-md-4 mb-4">
+                <div class="import-card">
+                    <h3>Furniture</h3>
+                    <p>
+                        Modern and classic furniture solutions for residential, commercial,
+                        and hospitality sectors sourced from global manufacturers.
+                    </p>
+                    <a href="/furniture" class="import-btn">View Furniture</a>
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+</section>
+
+
+
+<iframe
+        src="/frontFooter.html"
+        style="width:100%; height:380px; border:none; display:block;">
+</iframe>
+</body>
+</html>

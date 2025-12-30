@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css" integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div id="navbar"></div>
+<script>
+    fetch('/frontHeader.html')
+        .then(res => res.text())
+        .then(data => document.getElementById('navbar').innerHTML = data);
+</script>
+<br>
+<br>
+
+
+<section class="certification-section">
+    <div class="container">
+        <h4 class="cert-title">Certifications & Compliance</h4>
+
+        <ul class="cert-list">
+            <li>
+                <span class="cert-badge">IEC</span>
+                Government of India authorized Import Export Code
+            </li>
+            <li>
+                <span class="cert-badge">APEDA</span>
+                Registered exporter of agricultural & food products
+            </li>
+            <li>
+                <span class="cert-badge">FSSAI</span>
+                Food safety compliance for edible products
+            </li>
+            <li>
+                <span class="cert-badge">GST</span>
+                Registered under Goods & Services Tax
+            </li>
+            <li>
+                <span class="cert-badge">MSME</span>
+                Recognized Micro, Small & Medium Enterprise
+            </li>
+        </ul>
+    </div>
+</section>
+
+
+
+
+<iframe
+        src="/frontFooter.html"
+        style="width:100%; height:380px; border:none; display:block;">
+</iframe>
+</body>
+</html>

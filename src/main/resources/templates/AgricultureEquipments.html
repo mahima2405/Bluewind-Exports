@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="/style.css">
+</head>
+<body>
+<div id="navbar"></div>
+<script>
+    fetch('/frontHeader.html')
+        .then(res => res.text())
+        .then(data => document.getElementById('navbar').innerHTML = data);
+</script>
+<br>
+<br>
+
+
+<!-- ===== AGRICULTURAL EQUIPMENT IMPORTS ===== -->
+<section class="product-section">
+    <div class="container">
+
+        <h2 class="section-title">Agricultural Equipment Imports</h2>
+
+        <div class="product-grid">
+
+            <!-- CARD 1 -->
+            <div class="product-card">
+                <img src="/images/import/water-pumps.jpg" alt="Water Pumps">
+                <h4>Water Pumps</h4>
+                <p>Submersible pumps, centrifugal pumps, and monoblock pumps for irrigation</p>
+            </div>
+
+            <!-- CARD 2 -->
+            <div class="product-card">
+                <img src="/images/import/irrigation-systems.jpg" alt="Irrigation Systems">
+                <h4>Irrigation Systems</h4>
+                <p>Drip irrigation systems and sprinkler irrigation solutions</p>
+            </div>
+
+            <!-- CARD 3 -->
+            <div class="product-card">
+                <img src="/images/import/agri-motors.jpg" alt="Agricultural Motors">
+                <h4>Agricultural Motors</h4>
+                <p>Single-phase and three-phase electric motors for irrigation use</p>
+            </div>
+
+
+        </div>
+
+    </div>
+</section>
+
+
+<iframe
+        src="/frontFooter.html"
+        style="width:100%; height:380px; border:none; display:block;">
+</iframe>
+</body>
+</html>

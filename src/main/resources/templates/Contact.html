@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css" integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div id="navbar"></div>
+<script>
+    fetch('/frontHeader.html')
+        .then(res => res.text())
+        .then(data => document.getElementById('navbar').innerHTML = data);
+</script>
+<br>
+<br>
+
+<section class="office-section">
+    <div class="office-container">
+
+        <!-- LEFT : MAP -->
+        <div class="map-box">
+            <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d8283.173879565198!2d75.91128650947935!3d22.702364720805324!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3962e300591d20cf%3A0x5e90c9a5fd74c0a2!2sShanti%20Dazzle!5e0!3m2!1sen!2sin!4v1767024631480!5m2!1sen!2sin"
+                    allowfullscreen=""
+                    loading="lazy">
+            </iframe>
+        </div>
+
+        <!-- RIGHT : OFFICE DETAILS -->
+        <div class="office-details">
+
+            <h2>Indore</h2>
+            <p>
+                405, Shanti Dazzle,  <br>
+                Scheme No.140 <br>
+                Indore (M.P.) 452001, India
+            </p>
+
+            <h4>Email Address</h4>
+            <p>
+                <a href="mailto:info@bluewindexports.com">
+                    info@bluewindexports.com
+                </a>
+            </p>
+
+            <h4>Contact Details</h4>
+            <p>
+                Phone: <a href="tel:+919993413339">+91 9993413339</a><br>
+                Mobile: <a href="tel:+919589405999">+91 9589405999</a>
+            </p>
+            <h4>Follow Us</h4>
+            <p>
+                Instagram:
+                <a href="https://www.instagram.com/bluewind_exports"
+                   target="_blank">
+                    @bluewind_exports
+                </a>
+            </p>
+
+        </div>
+
+
+    </div>
+
+</section>
+
+<!-- Get In Touch Section -->
+<section class="get-in-touch">
+    <div class="get-in-touch-content">
+        <h2>Get In Touch With Us</h2>
+        <p>
+            Have questions about our export or import services?
+            Our team is ready to assist you with reliable global trade solutions.
+        </p>
+        <a href="Contact.html" class="get-in-touch-btn">
+            Contact Us
+        </a>
+    </div>
+</section>
+
+
+
+<iframe
+        src="/frontFooter.html"
+        style="width:100%; height:380px; border:none; display:block;">
+</iframe>
+</body>
+</html>

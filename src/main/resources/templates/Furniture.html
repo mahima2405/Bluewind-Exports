@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="/style.css">
+</head>
+<body>
+<div id="navbar"></div>
+<script>
+    fetch('/frontHeader.html')
+        .then(res => res.text())
+        .then(data => document.getElementById('navbar').innerHTML = data);
+</script>
+<br>
+<br>
+
+
+<!-- ===== FURNITURE IMPORTS ===== -->
+<section class="product-section light-bg">
+    <div class="container">
+
+        <h2 class="section-title">Furniture Imports</h2>
+
+        <div class="product-grid">
+
+            <!-- CARD 1 -->
+            <div class="product-card">
+                <img src="/images/import/living-room.png" alt="Living Room Furniture">
+                <h4>Living Room Furniture</h4>
+                <p>Sofas, sofa sets, coffee tables, TV units designed for comfort and style</p>
+            </div>
+
+            <!-- CARD 2 -->
+            <div class="product-card">
+                <img src="/images/import/bedroom.png" alt="Bedroom Furniture">
+                <h4>Bedroom Furniture</h4>
+                <p>Beds, wardrobes, bedside tables, dressing tables for modern homes</p>
+            </div>
+
+            <!-- CARD 3 -->
+            <div class="product-card">
+                <img src="/images/import/dining.png" alt="Dining Furniture">
+                <h4>Dining Furniture</h4>
+                <p>Dining tables, dining chairs, and bar stools with premium finish</p>
+            </div>
+
+            <!-- CARD 4 -->
+            <div class="product-card">
+                <img src="/images/import/office-furniture.png" alt="Office Furniture">
+                <h4>Office Furniture</h4>
+                <p>Office desks, chairs, workstations, and storage cabinets</p>
+            </div>
+
+            <!-- CARD 5 -->
+            <div class="product-card">
+                <img src="/images/import/outdoor.png" alt="Outdoor Furniture">
+                <h4>Outdoor Furniture</h4>
+                <p>Garden chairs, patio sets, outdoor tables, and loungers</p>
+            </div>
+
+            <!-- CARD 6 -->
+            <div class="product-card">
+                <img src="/images/import/modular.png" alt="Modular Furniture">
+                <h4>Modular & Customized Furniture</h4>
+                <p>Modular kitchens, wardrobes, and custom-made furniture solutions</p>
+            </div>
+
+        </div>
+
+    </div>
+</section>
+
+
+<iframe
+        src="/frontFooter.html"
+        style="width:100%; height:380px; border:none; display:block;">
+</iframe>
+</body>
+</html>
